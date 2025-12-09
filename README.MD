@@ -31,7 +31,7 @@ Navegue até a pasta do projeto e instale as bibliotecas necessárias:
 
 ```bash
 pip install Flask mysql-connector-python
-
+´´´
 ### Como Iniciar o Servidor
 
 1. Certifique-se de que o servidor MySQL está rodando.
@@ -57,12 +57,13 @@ data_admissao  DATE                          Data de admissão (formato YYYY-MM-
 
 ### 💻 Tecnologias Utilizadas
 
-Categoria,Tecnologia,Função
-Backend,Python,Linguagem principal.
-Framework,Flask,Roteamento e lógica de aplicação.
-Banco de Dados,MySQL,SGBD relacional.
-Template Engine,Jinja2,Renderização de HTML dinâmico.
-Frontend,"HTML5, CSS3",Estrutura e Estilização.
-setor,VARCHAR(50),Departamento.
+Categoria        Tecnologia        Função
+---------------------------------------------------------------
+Backend          Python            Linguagem principal.
+Framework        Flask             Roteamento e lógica da aplicação.
+Banco de Dados   MySQL             SGBD relacional.
+Template Engine  Jinja2            Renderização de HTML dinâmico.
+Frontend         HTML5, CSS3       Estrutura e estilização.
+
 telefone,VARCHAR(15),Telefone de contato.
 email,VARCHAR(100),E-mail corporativo.
