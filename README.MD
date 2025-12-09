@@ -37,7 +37,6 @@ pip install Flask mysql-connector-python
 1. Certifique-se de que o servidor MySQL está rodando.
 2. Execute o arquivo principal da aplicação:
 
-```bash
 python app.py
 
 3. Acesse a aplicação no seu navegador: http://127.0.0.1:5000/
