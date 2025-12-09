@@ -31,7 +31,7 @@ Navegue até a pasta do projeto e instale as bibliotecas necessárias:
 
 ```bash
 pip install Flask mysql-connector-python
-```
+
 ### Como Iniciar o Servidor
 
 1. Certifique-se de que o servidor MySQL está rodando.
@@ -67,6 +67,7 @@ Frontend         HTML5, CSS3       Estrutura e estilização.
 
 ### 🧑‍💻 Membros da Equipe
 
-Nome do Membro          Função no Projeto	            GitHub                                 
+Nome do Membro          Função no Projeto	            GitHub    
+---------------------------------------------------------------
 Luiz Gabriel	          Desenvolvedor Front-End       https://github.com/LuizSanti
 Vinicius Nascimento	    Desenvolvedor Back-End	      https://github.com/vininascimentodev
