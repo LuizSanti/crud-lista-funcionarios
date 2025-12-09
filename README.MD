@@ -32,15 +32,15 @@ Navegue até a pasta do projeto e instale as bibliotecas necessárias:
 ```bash
 pip install Flask mysql-connector-python
 
-Como Iniciar o Servidor
-Certifique-se de que o servidor MySQL está rodando.
+### Como Iniciar o Servidor
 
-Execute o arquivo principal da aplicação:
+1. Certifique-se de que o servidor MySQL está rodando.
+2. Execute o arquivo principal da aplicação:
 
-Bash
-
+```bash
 python app.py
-Acesse a aplicação no seu navegador: http://127.0.0.1:5000/
+
+3. Acesse a aplicação no seu navegador: http://127.0.0.1:5000/
 
 ### 💾 Estrutura do Banco de Dados
 
