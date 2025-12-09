@@ -68,5 +68,5 @@ Frontend         HTML5, CSS3       Estrutura e estilização.
 
 Nome do Membro          Função no Projeto	            GitHub    
 ---------------------------------------------------------------
-Luiz Gabriel	        Desenvolvedor Front-End       https://github.com/LuizSanti
+Luiz Gabriel	        Desenvolvedor Front-End         https://github.com/LuizSanti
 Vinicius Nascimento	    Desenvolvedor Back-End	        https://github.com/vininascimentodev
