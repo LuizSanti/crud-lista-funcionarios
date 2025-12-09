@@ -44,14 +44,14 @@ pip install Flask mysql-connector-python
 
 ### 💾 Estrutura do Banco de Dados
 
-O sistema utiliza o banco cadastro_funcionarios e a tabela funcionarios.
+O sistema utiliza o banco cadastro_funcionarios e a tabela funcionarios, que possui a seguinte estrutura:
 
-Coluna,Tipo de Dado,Descrição
-id,"INT (PK, Auto Increment)",Identificador único.
-nome,VARCHAR(100),Nome completo.
-cargo,VARCHAR(50),Cargo na empresa.
-salario,"DECIMAL(10, 2)",Salário mensal.
-data_admissao,DATE,Data de entrada (YYYY-MM-DD).
+Coluna	Tipo de Dado	Descrição
+id	INT (PK, Auto Increment)	Identificador único do funcionário.
+nome	VARCHAR(100)	Nome completo do funcionário.
+cargo	VARCHAR(50)	Cargo ocupado na empresa.
+salario	DECIMAL(10,2)	Salário mensal do funcionário.
+data_admissao	DATE	Data de admissão (formato YYYY-MM-DD).
 
 ### 💻 Tecnologias Utilizadas
 
