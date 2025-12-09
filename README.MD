@@ -65,5 +65,8 @@ Banco de Dados   MySQL             SGBD relacional.
 Template Engine  Jinja2            Renderização de HTML dinâmico.
 Frontend         HTML5, CSS3       Estrutura e estilização.
 
-telefone,VARCHAR(15),Telefone de contato.
-email,VARCHAR(100),E-mail corporativo.
+### 🧑‍💻 Membros da Equipe
+
+Nome do Membro      Função no Projeto	GitHub      Contato
+Luiz Gabriel	      Desenvolvedor Front-End       https://github.com/LuizSanti
+Vinicius Nascimento	Desenvolvedor Back-End	      https://github.com/vininascimentodev
