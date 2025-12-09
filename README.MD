@@ -40,7 +40,7 @@ pip install Flask mysql-connector-python
 
 **python app.py**
 
-3. Acesse a aplicação no seu navegador: http://127.0.0.1:5000/
+```3. Acesse a aplicação no seu navegador: http://127.0.0.1:5000/
 
 ### 💾 Estrutura do Banco de Dados
 
