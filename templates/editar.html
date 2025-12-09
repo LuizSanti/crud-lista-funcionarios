@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Editar Funcionário{% endblock %} 
+
+{% block content %}
+    <h2>Editar Funcionário</h2> 
+    
+    <form method="POST" action="{{ url_for('atualizar_funcionario_web', funcionario_id=funcionario[0]) }}">
+        <p><strong>Editando ID: {{ funcionario[0] }}</strong></p>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" value="{{ funcionario[1] }}" required><br><br> 
+
+        <label for="cargo">Cargo:</label>
+        <input type="text" id="cargo" name="cargo" value="{{ funcionario[2] }}"><br><br> 
+
+        <label for="salario">Salário:</label>
+        <input type="number" step="0.01" id="salario" name="salario" value="{{ '%.2f'|format(funcionario[3]) }}"><br><br> 
+
+        <label for="setor">Setor:</label>
+        <input type="text" id="setor" name="setor" value="{{ funcionario[4] }}"><br><br> 
+        
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" value="{{ funcionario[5] }}"><br><br> 
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" value="{{ funcionario[6] }}"><br><br> 
+
+        <label for="data_admissao">Data de Admissão (YYYY-MM-DD):</label>
+        <input type="text" id="data_admissao" name="data_admissao" value="{{ funcionario[7] }}" required><br><br> 
+
+        <button type="submit">Salvar Alterações</button> 
+        <a href="{{ url_for('listar_funcionarios_web') }}" class="btn-cancel">Cancelar</a>
+    </form>
+{% endblock %}

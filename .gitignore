@@ -1,0 +1,18 @@
+# .gitignore
+
+# 1. AMBIENTES VIRTUAIS (essencial para Python)
+# Ignora pastas de ambientes virtuais (venv, env, .venv)
+venv/
+env/
+.venv/
+
+# 2. SEGURANÇA (senhas)
+# NUNCA envie chaves ou senhas
+.env
+
+# 3. Arquivos de Cache e Pycache
+__pycache__/
+*.pyc
+
+# 4. Logs de execução e depuração
+*.log

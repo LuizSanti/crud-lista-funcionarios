@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Consulta de Funcionário</h1>
+
+    {% if funcionario %}
+        <h2>Detalhes do Funcionário: {{ funcionario[1] }}</h2>
+        <p><strong>ID:</strong> {{ funcionario[0] }}</p>
+        <p><strong>Cargo:</strong> {{ funcionario[2] }}</p>
+        <p><strong>Salário:</strong> R$ {{ "%.2f"|format(funcionario[3]) }}</p>
+        <p><strong>Setor:</strong> {{ funcionario[4] }}</p>
+        <a href="{{ url_for('listar_funcionarios_web') }}" class="btn btn-secondary">Voltar</a>
+    {% else %}
+        <div class="alert alert-warning" role="alert">
+            Funcionário não encontrado.
+        </div>
+    {% endif %}
+
+{% endblock %}

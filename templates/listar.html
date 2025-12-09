@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Lista de Funcionários{% endblock %}
+
+{% block content %}
+    <h2>Lista de Funcionários Cadastrados</h2>
+    
+    {% if not lista %}
+        <p>Nenhum funcionário encontrado.</p>
+    {% else %}
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Cargo</th>A
+                    <th>Salário</th>
+                    <th>Setor</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for f in lista %}
+                <tr>
+                    <td>{{ f[0] }}</td> 
+                    <td>{{ f[1] }}</td>
+                    <td>{{ f[2] }}</td>
+                    <td>R$ {{ "{:,.2f}".format(f[3] | float) }}</td>
+                    <td>{{ f[4] }}</td>
+                    <td class="acoes">
+                        <a href="/editar/{{ f[0] }}">Editar</a> | 
+                        <a href="/deletar/{{ f[0] }}">Deletar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+{% endblock %}

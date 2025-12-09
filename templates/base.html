@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Cadastro Funcionários{% endblock %}</title> <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Cadastro de Funcionários</h1>
+    </header>
+    
+    <nav>
+        <a href="/">Home</a>
+        <a href="/cadastrar">Cadastrar</a>
+        <a href="/listar">Listar</a>
+    </nav>
+
+    <main id="conteudo">
+        {% block content %}
+            <p>Bem-vindo ao sistema web de gerenciamento de funcionários!</p> 
+        {% endblock %}
+    </main>
+</body>
+</html>
